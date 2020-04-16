@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukaan</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    
+}
+    :root{
+        --navbar-height:59px;
+    }
+    #navbar{
+    display: flex;
+    align-items: center;
+    /* position: sticky;
+    top: 0px; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* top:0px;
+    left:0px; */
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar{
+    position:relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: black;
+    font-style: bold;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('back.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.79;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 2px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+    
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;;
+    background-color: brown;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+} 
+.center{
+    text-align: center;
+}  
+
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+ #services::before{ 
+    content: "";
+    position: absolute;
+    background: url('back2.jpg') no-repeat center center/cover;
+    height: 750px;
+    
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+} 
+#services2{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid blue;
+    background-color: rgb(240, 240, 121);
+    
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    /* background: #f2f2f2; */
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+    height: 200px;
+    margin: auto;
+    display: block;
+    width: 250px;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+.right{
+    position: absolute;
+    right: 40px;
+    top:auto;
+    display: inline-block;
+    align-items: center;
+   
+}
+.btn2{
+    color: black;
+    
+    display: block;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-style: bold;
+}
+.btn2:hover{
+    color: white;
+    background-color: black;
+}
+.box:hover{
+    transform:scale(1.2);
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+    </style>
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="error found">
+        </div>
+        <div class=right>
+            <button class="btn2"><a href="/login.html">login</a></button>
+            <button class="btn2">search</button>
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">about us</a></li>
+            <li class="item"><a href="#">contact us</a></li>
+            <li class="item"><a href="#">help</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class ="h-primary">Welcome to DUKAAN</h1>
+        <p>We are providing a platform to small businesses  to sell their products online, inviting to join our e-shop platform. The platform will also enable individuals to buy as well as sell their own items without leaving home. We also provide delivery solutions due to CO-VID reality for business on the platform.
+            Help the country to fight against corona. Stay home...Stay safe.
+        </p>
+        <button class="btn">Order now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.jpg" alt="">
+                <h2 class="h-secondary center"><a href="Severs.htm">GROCERY</a></h2>
+                <p class="center">Dying out from hunger in corona pandemic!!No need to crave more, get your all food necessities here on single place "Dukaan" from your nearest grocery store. Order pulses, flour, vegetables, fruits and many more from the local vendors situated near your home.
+                    Help the country to fight against corona. Stay home...Stay safe.
+                     </p>
+            </div>
+            <div class="box">
+                <img src="img/2.jpg" alt="">
+                <h2 class="h-secondary center"><a href="medicines.html">MEDICINES</a></h2>
+                <p class="center">Finding difficulties in getting your daily prescribed medicines in corona pandemic. No need to suffer more!! , Get your all food necessary medicines here on single place "Dukaan" from your nearest Pharmacy. Order medicines for every disease from the local vendors situated near your home.
+                    Help the country to fight against corona. Stay home...Stay safe.
+                    </p>
+            </div>
+            <div class="box">
+                <img src="img/6.jpg" alt="">
+                <h2 class="h-secondary center"><a href="about us -first-link.htm">CORONA AWARENESS</a></h2>
+                <p class="center">We are collectively facing a Pandemic threat that is sweeping across the humanity beyond oceans and borders. Considering the seriousness of COVID-19, it’s about time we step up against this deadly disease. For the sake of lives lost and rest of humanity, let us all pledge to beat corona back.
+                    Help the country to fight against corona. Stay home...Stay safe.
+                    </p>
+            </div>
+        </div>
+    </section>
+    <section id="services-container">
+                <div id="services">
+            <div class="box">
+                <img src="img/4.jpg" alt="">
+                <h2 class="h-secondary center"><a href="foodpage.htm">HOME MADE FOOD FOR VOLUNTEERS</a></h2>
+                <p class="center">Hello Ladies…it’s your time to shine!! Serve your left out food or make extra food for the volunteers out there. They are working hard to save the nation without the dream of any reward. Devote your some time to make the food for them and register yourself here.
+                    Help the country to fight against corona. Stay home...Stay safe.
+                    </p>
+            </div>
+            <div class="box">
+                <img src="img/5.jpg" alt="">
+                <h2 class="h-secondary center"><a href="charity.html">MONEY DONATION</a></h2>
+                <p class="center">Love to help in difficult times!! It time to play your role. Help to fight the country against COVID 19 by giving your precious time and money to needy organisations which will help the volunteers to save the country. Donate the desired amount so that it will help the country to fight against the pandemic.
+                    Stay home…Stay safe.
+                    </p>
+            </div>
+            <div class="box">
+                <img src="img/3.jpg" alt="">
+                <h2 class="h-secondary center"><a href="craftpage.htm">CORONA NECESSITIES</a></h2>
+                <p class="center">Have crafting talent inside you!! Then why are you waiting for. Help the country to make handmade masks, gloves, and other helping stuffs and give them to the needy who are unable to buy. 
+                    We also provide you the organisations who are ready to help you by providing these stuff which will prevent you from this pandemic on lower costs.
+                    Help the country to fight against corona. Stay home...Stay safe.
+                    </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Dukaan.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
