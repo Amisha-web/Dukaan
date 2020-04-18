@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name ="viewport" content="width=device-width", initial-scale=1>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <style>
+ .heroshot{
+background: url(setpic.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 98vh;
+    background-position: center center;
+position:relative;
+display: flex;
+ }
+
+.centered {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+font-size:22px;
+    text-align: center;
+}
+.heroshot-heading{
+font-size:48px;
+font-weight:700;
+}
+ .background-color{
+background-color:rgb(255,93,70);
+width:100%;
+padding:100px 20%;
+display:flex;
+justify-content: center;
+    align-items: center;
+ }
+ .centered1{
+display: flex;
+justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    text-align: center; 
+font-size:22px;
+padding-top:20px;
+ }
+ .paragraph1{
+font-size:20px;
+margin:80px;
+line-height:30px;
+padding-top:0px;
+word-spacing:3px;
+padding-left:5px;
+padding-right:2px;
+padding-bottom:0px;
+margin-bottom:30px;
+margin-top:20px;
+.one
+{
+display: flex;
+justify-content: center;
+ align-items:center;
+flex-direction: column;
+    text-align: center; 
+}
+ }
+ h1{
+ text-decoration:underline;
+ margin-top:10px;
+ letter-spacing:3px;
+line-height:150%;}
+ 
+ .paragraph2
+ {
+ padding-top:5px;
+ letter-spacing:2px;
+
+ }
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 20px;
+}
+ .background-color1{
+ background-color:rgb(255,255,255);
+ padding-top:300px;
+ padding-bottom:300px:
+}
+.bottomline1{
+padding-bottom:20px;
+font-size:20px;
+
+}
+.body{
+background-image:url("http://www.pd4pic.com/images/snail-branch.jpg");}
+{
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.colorwall
+{
+background-color: #f2f2f2;
+padding-bottom:20px;
+padding-top:20px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:white;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="heroshot">
+<div class="centered">
+<h1 class="heroshot-heading">MEDICINES</h1>
+<p>
+
+We at DUKAAN provide you the necessary medicines with the nearest local vendor with a quality that will never dissapoint you!
+</p>
+<p class="paragraph2">Complete with all the best market pricing!<br>Stay Home & Stay Safe.<br>Save Lives</p>
+<p class="paragraph2"> </p>
+</div>
+</div>
+<div class="colorwall">
+<div class="container">
+  <form action="action_page.php" class="one">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Location</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="Location" placeholder="Enter your full address..">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Selection</label>
+      </div>
+     <div class="col-75">
+        <input type="text" id="fname" name="Location" placeholder="Enter shop name or retailer">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Search">
+    </div>
+  </form>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-3">
+<img src="bharat.jpg" style="width:100%;"></img> 
+<div class="bg-img">
+  <form action="/action_page.php">
+  <label for="email"><b>Bharat Store</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+
+</div>
+<div class="col-lg-3">
+<img src="antimos.jpeg" style="width:100%;"></img> 
+<div class="bg-img">
+  <form action="/action_page.php">
+   <label for="email"><b>Anti-mosquito</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+</div>
+<div class="col-lg-3">
+<img src="balm.jpeg" style="width:100%;"></img>
+<div class="bg-img">
+  <form action="/action_page.php">
+   <label for="email"><b>Balm</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+</div>
+<div class="col-lg-3">
+<img src="sanitizer.jpeg" style="width:100%;" ></img> 
+<div class="bg-img">
+  <form action="/action_page.php">
+   <label for="email"><b>Sanitiser</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-3">
+<img src="mehram.jpg" style="width:100%;"></img>
+<div class="bg-img">
+  <form action="/action_page.php">
+   <label for="email"><b>Mehram Store</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+</div>
+<div class="col-lg-3">
+<img src="Paracetamol.jpeg" style="width:100%;"></img>
+<div class="bg-img">
+  <form action="/action_page.php">
+   <label for="email"><b>Paracetamol</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+</div>
+<div class="col-lg-3">
+<img src="burnol.jpeg" style="width:100%;"></img>
+<div class="bg-img">
+  <form action="/action_page.php">
+   <label for="email"><b>Burnol</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+</div>
+<div class="col-lg-3">
+<img src="betnovate.jpg" style="width:95%; "></img> 
+<div class="bg-img">
+  <form action="/action_page.php">
+   <label for="email"><b>Betnovate-N</b></label>
+<div>
+   <button type="submit" class="btn">Add to cart</button>
+   <button type="submit" class="btn">Buy Now</button>
+</div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
